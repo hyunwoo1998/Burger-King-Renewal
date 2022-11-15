@@ -6,5 +6,5 @@
 - HTML/CSS/JS Hard coding.
 
 ## Demo & Preview
-- [Demo](https://hyunwoo1998.github.io/burger-king-renewal/index.html)<br>
+- [Demo](https://hyunwoo1998.github.io/Burger-King-Renewal/)<br>
 <img src="./img/preview.jpg">
