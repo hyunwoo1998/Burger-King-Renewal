@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/indexMain.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo.png" width="120">
+            </a>
+            <nav>
+                <ul class="menu-list">
+                    <li>
+                        <span>메뉴 소개</span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">스페셜&할인팩</a>
+                            </li>
+                            <li>
+                                <a href="">신제품(NEW)</a>
+                            </li>
+                            <li>
+                                <a href="">프리미엄</a>
+                            </li>
+                            <li>
+                                <a href="">와퍼&주니어</a>
+                            </li>
+                            <li>
+                                <a href="">치킨&슈림프버거</a>
+                            </li>
+                            <li>
+                                <a href="">올데이킹</a>
+                            </li>
+                            <li>
+                                <a href="">사이드</a>
+                            </li>
+                            <li>
+                                <a href="">음료&디저트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>이벤트</span>
+                    </li>
+                    <li>
+                        <span>브랜드스토리</span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="">BRAND</a>
+                            </li>
+                            <li>
+                                <a href="">WHOPPER</a>
+                            </li>
+                            <li>
+                                <a href="">COMM.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>고객센터</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-btn-group">
+                <button class="nav-btn btn1" onclick="location.href='login.html';">딜리버리 주문</button>
+                <button class="nav-btn btn2">매장 찾기</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="youtube">
+            <h2 class="none">브랜드 영상</h2>
+            <div class="container">
+                <div class="bread">
+                    <a id="recommend"></a>
+                </div>
+                <div class="youtube-video">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/tB-AQbpcuOE?autoplay=1&mute=1&loop=1&playlist=tB-AQbpcuOE"
+                        title="Burger King Youtube"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="sns">
+                    <a href="https://www.youtube.com/channel/UCEKRI0fipK4LEgV98nI2CQA/featured" target="_blank"
+                        class="sns-item">
+                        <img src="./img/sns_youtube.png" alt="youtube-icon" class="sns-icon">
+                        <div class="sns-text">
+                            <h4>YOUTUBE</h4>
+                            <p>구독 5만</p>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/burgerkingkorea" target="_blank" class="sns-item">
+                        <img src="./img/sns_face.png" alt="facebook-icon" class="sns-icon">
+                        <div class="sns-text">
+                            <h4>FACEBOOK</h4>
+                            <p>좋아요 48만</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/burgerkingkorea" target="_blank" class="sns-item">
+                        <img src="./img/sns_insta.png" alt="insta-icon" class="sns-icon">
+                        <div class="sns-text">
+                            <h4>INSTAGRAM</h4>
+                            <p>팔로워 75만</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="carousel">
+            <h2 class="none">프로모션</h2>
+            <div class="container">
+                <div class="carousel-list">
+                    <img src="./img/event4.png" alt="event-img4" id="last-item" class="carousel-item">
+                    <img src="./img/event1.png" alt="event-img1" class="carousel-item">
+                    <img src="./img/event2.png" alt="event-img2" class="carousel-item">
+                    <img src="./img/event3.png" alt="event-img3" class="carousel-item">
+                    <img src="./img/event4.png" alt="event-img4" class="carousel-item">
+                    <img src="./img/event1.png" alt="event-img1" id="first-item" class="carousel-item">
+                </div>
+                <button id="btn-prev"></button>
+                <button id="btn-next"></button>
+            </div>
+        </section>
+        <section class="order">
+            <h2 class="none">이용방법</h2>
+            <div class="container">
+                <a href="#" class="order-item">
+                    <img src="./img/app_img.jpg" alt="app-img">
+                </a>
+                <a href="#" class="order-item">
+                    <img src="./img/delivery_img.jpg" alt="delivery-img">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <section class="footer-top">
+                <div class="footer-top-text1">
+                    <h2>집에서 만나는 버거킹!</h2>
+                    <p>딜리버리 전화주문 안내 10:00~22:00 / 연중무휴 (※매장별로 상이할 수 있습니다.)</p>
+                </div>
+                <div class="footer-top-text2">
+                    <a href="#">
+                        <img src="./img/tel_img.png" alt="tel-img">
+                        <p>1599-0505</p>
+                    </a>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="footer-bottom-text1">
+                    <h2 class="logo">BURGER KING</h2>
+                    <span>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</span>
+                    <span>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</span>
+                    <span>Copyright 2019 BKR Co., Ltd. All right Reserved</span>
+                </div>
+                <div class="footer-bottom-text2">
+                    <ul>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#">법적고지</a>
+                        </li>
+                    </ul>
+                    <div class="footer-btn-group">
+                        <a href="#" class="footer-btn">인재채용</a>
+                        <a href="#" class="footer-btn">가맹점모집</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <a class="top-btn" href="#"></a>
+
+    <!-- Index JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/loginMain.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="logo.png" width="120">
+                <span>버거킹</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="page-nav">
+        <ul>
+            <li>
+                <a href="./index.html">HOME</a>
+            </li>
+            <li>
+                <span>로그인</span>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="main-title">
+                <span class="main-text">YOUR WAY</span>
+                <span class="main-text">어서오세요! 버거킹입니다.</span>
+            </div>
+            <div class="main-content">
+                <section class="main-login-section">
+                    <form>
+                        <fieldset class="login-field">
+                            <legend class="login-text">
+                                <h2><i class="icon fa-solid fa-key"></i>일반 로그인</h2>
+                            </legend>
+                            <div class="info-input">
+                                <input type="text" id="input-id" placeholder="아이디 (이메일)">
+                                <input type="password" id="input-passwd" placeholder="비밀번호">
+                                <i id="passwd-icon" class="fa-solid fa-eye-slash" onclick="changeBtn()"></i>
+                            </div>
+                            <div class="checkbox-field">
+                                <input type="checkbox" id="check1"><label for="check1">아이디 저장</label>
+                                <input type="checkbox" id="check2"><label for="check2">자동 로그인</label>
+                            </div>
+                            <button type="submit" class="login-btn">로그인</button>
+                            <div class="info-search">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#">비밀번호 찾기</a>
+                                <a href="#">회원 가입</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="other-login-section">
+                    <div class="login-field">
+                        <h2 class="login-text"><i class="icon fa-solid fa-unlock-keyhole"></i>간편 로그인</h2>
+                        <div class="btn-group">
+                            <button type="button" class="other-login naver-login">
+                                <img src="./img/naver_icon.gif" alt="naver-icon" class="naver-icon">
+                                <span>네이버 로그인</span>
+                            </button>
+                            <button type="button" class="other-login kakao-login">
+                                <img src="./img/kakao_icon.gif" alt="kakao-icon" class="kakao-icon">
+                                <span>카카오톡 로그인</span>
+                            </button>
+                            <button type="button" class="other-login apple-login">
+                                <img src="./img/apple_icon.gif" alt="apple-icon" class="apple-icon">
+                                <span>애플 로그인</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="non-members-section">
+                    <div class="login-field">
+                        <h2 class="login-text"><i class="icon fa-solid fa-user-lock"></i>비회원</h2>
+                        <div class="btn-group">
+                            <button class="non-members order-go">주문하기</button>
+                            <button class="non-members order-info">내역 확인</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <section class="footer-top">
+                <div class="footer-top-text1">
+                    <h2>집에서 만나는 버거킹!</h2>
+                    <p>딜리버리 전화주문 안내 10:00~22:00 / 연중무휴 (※매장별로 상이할 수 있습니다.)</p>
+                </div>
+                <div class="footer-top-text2">
+                    <a href="#">
+                        <img src="./img/tel_img.png" alt="tel-img">
+                        <p>1599-0505</p>
+                    </a>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="footer-bottom-text1">
+                    <h2 class="logo">BURGER KING</h2>
+                    <span>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</span>
+                    <span>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</span>
+                    <span>Copyright 2019 BKR Co., Ltd. All right Reserved</span>
+                </div>
+                <div class="footer-bottom-text2">
+                    <ul>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="#">법적고지</a>
+                        </li>
+                    </ul>
+                    <div class="footer-btn-group">
+                        <a href="#" class="footer-btn">인재채용</a>
+                        <a href="#" class="footer-btn">가맹점모집</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <a class="top-btn" href="#"></a>
+
+    <!-- Login JS -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

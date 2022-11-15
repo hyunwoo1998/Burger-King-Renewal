@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+body {
+    background: #ecb;
+}
+
+/* header */
+#header {
+    background: #fa6400;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo span {
+    font-family: 'yg-jalnan', serif;
+    font-size: 4.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.page-nav {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    min-height: 50px;
+    background: var(--black);
+}
+
+.page-nav>ul {
+    position: relative;
+    display: flex;
+    top: 15px;
+    width: var(--width);
+    margin: 0 auto;
+    padding-left: 60px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.page-nav li:first-child::after {
+    content: ">";
+    margin: 0 10px 0 5px;
+}
+
+/* main */
+main {
+    padding-top: 250px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'yg-jalnan', serif;
+}
+
+.main-text:first-child {
+    color: var(--bread);
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 4.2rem;
+}
+
+.main-content {
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-around;
+}
+
+.login-field {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    border: 3px solid var(--black);
+    border-radius: 5px;
+}
+
+.login-text {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    padding: 0 5px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: #ecb;
+    transform: translateX(-50%);
+}
+
+.icon {
+    margin-right: 10px;
+    border-radius: 100%;
+    background: var(--black);
+    color: white;
+    font-size: 1.6rem;
+}
+
+.fa-key {
+    padding: 8px;
+}
+
+.fa-unlock-keyhole {
+    padding: 8px 9px;
+}
+
+.fa-user-lock {
+    padding: 8px 6px;
+}
+
+#passwd-icon {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.info-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-id {
+    margin: 20px 0 10px;
+}
+
+.info-input>input {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: gray;
+    transition: all .2s ease;
+}
+
+.info-input>input:focus {
+    box-shadow: 0 0 2px 2px rgba(25, 25, 25, 0.3);
+}
+
+.checkbox-field {
+    margin: 20px 0;
+}
+
+.checkbox-field label {
+    font-size: 1.4rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    display: inline-block;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: '⨯';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #c0c0c0;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: '○';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: black;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    background: var(--bread);
+}
+
+.info-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.info-search>a+a::before {
+    content: "·";
+    margin: 0 5px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.other-login {
+    display: flex;
+    width: 240px;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.naver-login {
+    background: #06c900;
+    color: white;
+}
+
+.kakao-login {
+    background: #fbec1a;
+}
+
+.apple-login {
+    background: black;
+    color: white;
+}
+
+.other-login>img {
+    position: relative;
+    right: 30px;
+}
+
+.naver-icon {
+    padding: 0 10px;
+    border-right: 2px solid #d1f4cc;
+}
+
+.kakao-icon {
+    padding: 0 10px;
+    border-right: 2px solid var(--black);
+}
+
+.apple-icon {
+    padding: 0 13px;
+    border-right: 2px solid white;
+}
+
+.other-login span {
+    font-size: 1.6rem;
+}
+
+.non-members {
+    padding: 10px 0;
+    width: 240px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #BE8C63;
+    color: white;
+    transition: all .2s ease;
+}
+
+.order-go:hover {
+    background: var(--patty);
+}
+
+.order-info:hover {
+    background: var(--bread);
+}

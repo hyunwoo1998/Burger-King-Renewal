@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 여기어때 잘난체 */
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 나눔스퀘어라운드 */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* 컬러 */
+    --bread: #e47b36;
+    --patty: #9a3316;
+    --black: #191919;
+
+    /* 가로 크기 */
+    --width: 1280px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input, button {
+    font-family: 'NanumSquareRound', 'yg-jalnan', serif;
+    letter-spacing: .3px;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: var(--width);
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}
+
+/* 탑 버튼 */
+.top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/top_btn.png) center no-repeat;
+    z-index: 9999;
+}
