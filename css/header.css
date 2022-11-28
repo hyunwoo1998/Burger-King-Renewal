@@ -9,10 +9,6 @@
     box-shadow: 0 0 5px var(--black);
 }
 
-/* .sub-open {
-    height: 380px;
-} */
-
 #header>.container {
     display: flex;
     justify-content: space-between;
@@ -23,15 +19,15 @@
     display: flex;
 }
 
-.menu-list span {
+.menu-title {
     font-family: 'yg-jalnan', serif;
-    font-size: 2.4rem;
+    font-size: var(--font24);
 }
 
-.menu-list>li:nth-child(2n-1) span::after {
+.menu-list>li:nth-child(2n-1) .menu-title::after {
     content: "▾";
     margin-left: 5px;
-    font-size: 2.4rem;
+    font-size: var(--font24);
 }
 
 .menu-list>li {
@@ -69,7 +65,7 @@
 }
 
 .submenu a {
-    font-size: 16px;
+    font-size: var(--font16);
 }
 
 .nav-btn-group {
@@ -81,9 +77,10 @@
     padding: 0 25px;
     border: 0;
     box-shadow: 1px 1px 3px gray;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     font-weight: bold;
     color: white;
+    line-height: 50px;
     transition: all 0.3s ease 0s;
 }
 

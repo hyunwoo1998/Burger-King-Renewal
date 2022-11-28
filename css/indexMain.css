@@ -29,7 +29,7 @@ main>section {
 
 #recommend {
     font-family: 'yg-jalnan', serif;
-    font-size: 3.6rem;
+    font-size: var(--font36);
     color: white;
     line-height: 80px;
 }
@@ -73,7 +73,7 @@ main>section {
 
 .sns-text {
     font-family: 'yg-jalnan', serif;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     color: white;
 }
 
@@ -83,7 +83,7 @@ main>section {
     padding: 5px;
     background: white;
     font-family: 'NanumSquareRound', serif;
-    font-size: 1.2rem;
+    font-size: var(--font12);
     font-weight: bold;
     color: var(--black);
 }

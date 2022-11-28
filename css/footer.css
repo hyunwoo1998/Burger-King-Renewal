@@ -17,12 +17,12 @@ footer {
 .footer-top-text1 h2 {
     margin-bottom: 10px;
     font-family: 'yg-jalnan', serif;
-    font-size: 2.4rem;
+    font-size: var(--font24);
     letter-spacing: 2px;
 }
 
 .footer-top-text1 p {
-    font-size: 1.6rem;
+    font-size: var(--font16);
 }
 
 .footer-top-text2>a {
@@ -33,7 +33,7 @@ footer {
 
 .footer-top-text2 p {
     margin-left: 12px;
-    font-size: 4.8rem;
+    font-size: var(--font48);
 }
 
 .footer-bottom {
@@ -51,18 +51,18 @@ footer {
 .footer-bottom-text1 .logo {
     margin-bottom: 10px;
     font-family: 'yg-jalnan', serif;
-    font-size: 2.4rem;
+    font-size: var(--font24);
 }
 
 .footer-bottom-text1 span {
     line-height: 2rem;
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .footer-bottom-text2 ul {
     display: flex;
     margin-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .footer-bottom-text2 li +li::before {
@@ -81,7 +81,7 @@ footer {
     padding: 8px 20px;
     background: #FCDEC0;
     border-radius: 10px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
     letter-spacing: 1px;
     font-weight: bold;
     color: var(--patty);

@@ -24,19 +24,25 @@
 
     /* 가로 크기 */
     --width: 1280px;
+
+    /* 폰트 크기 */
+    --font12: 1.2rem;
+    --font14: 1.4rem;
+    --font16: 1.6rem;
+    --font18: 1.8rem;
+    --font24: 2.4rem;
+    --font36: 3.6rem;
+    --font48: 4.8rem;
 }
 
 html {
+    /* 폰트 크기 기준 */
     font-size: 62.5%;
 }
 
 body, input, button {
     font-family: 'NanumSquareRound', 'yg-jalnan', serif;
     letter-spacing: .3px;
-}
-
-img {
-    -webkit-user-drag: none;
 }
 
 a, button {
@@ -59,6 +65,6 @@ a, button {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: url(../img/top_btn.png) center no-repeat;
+    background: url(../img/top_btn.png) center center no-repeat;
     z-index: 9999;
 }

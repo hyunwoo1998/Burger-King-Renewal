@@ -17,7 +17,7 @@ body {
 
 .logo span {
     font-family: 'yg-jalnan', serif;
-    font-size: 4.2rem;
+    font-size: var(--font48);
     color: white;
     cursor: pointer;
 }
@@ -37,7 +37,7 @@ body {
     width: var(--width);
     margin: 0 auto;
     padding-left: 60px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     color: white;
 }
 
@@ -64,7 +64,7 @@ main {
 }
 
 .main-text {
-    font-size: 4.2rem;
+    font-size: var(--font48);
 }
 
 .main-content {
@@ -86,7 +86,7 @@ main {
     top: -20px;
     left: 50%;
     padding: 0 5px;
-    font-size: 1.8rem;
+    font-size: var(--font18);
     font-weight: 900;
     background: #ecb;
     transform: translateX(-50%);
@@ -97,7 +97,7 @@ main {
     border-radius: 100%;
     background: var(--black);
     color: white;
-    font-size: 1.6rem;
+    font-size: var(--font16);
 }
 
 .fa-key {
@@ -116,7 +116,7 @@ main {
     position: absolute;
     bottom: 16px;
     right: 20px;
-    font-size: 2rem;
+    font-size: var(--font18);
     cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ main {
     padding: 15px 20px;
     border: 0;
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     color: gray;
     transition: all .2s ease;
 }
@@ -148,7 +148,7 @@ main {
 }
 
 .checkbox-field label {
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 input[type="checkbox"] {
@@ -175,7 +175,7 @@ input[type="checkbox"]+label:before {
     text-align: center;
     font-weight: 700;
     line-height: 30px;
-    font-size: 2rem;
+    font-size: var(--font18);
     color: white;
 }
 
@@ -190,7 +190,7 @@ input[type="checkbox"]:checked+label:after {
     background: black;
     font-weight: 700;
     line-height: 30px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     color: white;
     text-align: center;
 }
@@ -200,7 +200,7 @@ input[type="checkbox"]:checked+label:after {
     padding: 10px 0;
     border: 0;
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     font-weight: 700;
     color: white;
     letter-spacing: 1px;
@@ -211,7 +211,7 @@ input[type="checkbox"]:checked+label:after {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: var(--font14);
 }
 
 .info-search>a+a::before {
@@ -234,7 +234,7 @@ input[type="checkbox"]:checked+label:after {
     align-items: center;
     border: 0;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: var(--font14);
     font-weight: 700;
     transition: all .2s ease;
 }
@@ -274,7 +274,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .other-login span {
-    font-size: 1.6rem;
+    font-size: var(--font16);
 }
 
 .non-members {
@@ -283,7 +283,7 @@ input[type="checkbox"]:checked+label:after {
     margin-bottom: 10px;
     border: 0;
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: var(--font16);
     font-weight: 700;
     background: #BE8C63;
     color: white;
